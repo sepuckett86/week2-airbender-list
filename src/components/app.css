@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Delius&display=swap');
+
+h1, h2 {
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Delius', cursive;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
