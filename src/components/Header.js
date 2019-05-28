@@ -4,7 +4,7 @@ class Header extends Component {
     renderTemplate() {
         return /*html*/ `
             <header>
-                <h1>Avatar List</h1>
+                <h1>Avatar Characters</h1>
             </header>
         `;
     }

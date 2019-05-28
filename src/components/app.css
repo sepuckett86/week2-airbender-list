@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Delius&display=swap');
 
-h1, h2 {
+h1 {
     font-family: 'Permanent Marker', cursive;
     text-align: center;
+    font-size: 3em;
 }
 
 h2 {
