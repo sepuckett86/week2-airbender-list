@@ -26,7 +26,7 @@ class App extends Component {
         });
         
         dom.prepend(headerDOM);
-        main.appendChild(loadingDOM);
+        dom.appendChild(loadingDOM);
         main.appendChild(characterListDOM);
 
         return dom;
