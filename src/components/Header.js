@@ -18,6 +18,7 @@ class Header extends Component {
                     <a href="#${fireParams}"><img src="./assets/fire.png"></a>
                     <a href="#${airParams}"><img src="./assets/air.png"></a>
                 </section>
+                <a class="center" href="">ALL</a>
             </header>
         `;
     }

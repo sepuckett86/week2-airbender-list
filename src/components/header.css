@@ -19,3 +19,8 @@ header section {
 header section img {
     height: 100px;
 }
+
+.center {
+    display: flex;
+    justify-content: center;
+}
