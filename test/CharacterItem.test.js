@@ -19,3 +19,18 @@ test('returns Character Item html', assert => {
         </li>
     `);
 });
+
+test('returns no-image png if character has no image', assert => {
+    const character = {
+        '_id': '5cdf0769b6e02a467e3e76f3',
+        'name': 'Guri'  
+    };
+    const characterItem = new CharacterItem({ character });
+    const actual = characterItem.renderTemplate();
+    assert.htmlEqual(actual, /*html*/ `
+        <li>
+            <h2>Guri</h2>
+            <img src="./assets/no-image.png" alt="Guri">
+        </li>
+    `);
+});
