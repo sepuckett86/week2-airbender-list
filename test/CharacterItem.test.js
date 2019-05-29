@@ -16,8 +16,8 @@ test('returns Character Item html', assert => {
         <li>
             <h2>46th Earth King</h2>
             <img src="https://vignette.wikia.nocookie.net/avatar/images/5/51/46th_Earth_King.png/revision/latest?cb=20130627160441" alt="46th Earth King">
-            <p><a href="">Allies</a></p>
-            <p><a href="">Enemies</a></p>
+            <p><a href="#allies=46th+Earth+King">Allies</a></p>
+            <p><a href="#enemies=46th+Earth+King">Enemies</a></p>
         </li>
     `);
 });
@@ -33,8 +33,8 @@ test('returns no-image png if character has no image', assert => {
         <li>
             <h2>Guri</h2>
             <img src="./assets/no-image.png" alt="Guri">
-            <p><a href="">Allies</a></p>
-            <p><a href="">Enemies</a></p>
+            <p><a href="#allies=Guri">Allies</a></p>
+            <p><a href="#enemies=Guri">Enemies</a></p>
         </li>
     `);
 });
