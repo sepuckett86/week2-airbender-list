@@ -4,7 +4,13 @@ class Header extends Component {
     renderTemplate() {
         return /*html*/ `
             <header>
-                <h1>Avatar Characters</h1>
+                <section>
+                    <img src="./assets/water.png">
+                    <img src="./assets/earth.png">
+                    <h1>Avatar Characters</h1>
+                    <img src="./assets/fire.png">
+                    <img src="./assets/air.png">
+                </section>
             </header>
         `;
     }
