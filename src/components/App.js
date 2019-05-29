@@ -1,6 +1,7 @@
 import Component from './Component.js';
 import Header from './Header.js';
 import CharacterList from './CharacterList.js';
+import Loading from './Loading.js';
 
 import api from '../services/api.js';
 
@@ -15,12 +16,16 @@ class App extends Component {
 
         const characterList = new CharacterList({ characters: [] });
         const characterListDOM = characterList.render();
+
+        const loading = new Loading({ loaded: false });
+        const loadingDOM = loading.render();
         
         api.getCharacters().then(response => {
             characterList.update({ characters: response });
         });
         
         dom.prepend(headerDOM);
+        main.appendChild(loadingDOM);
         main.appendChild(characterListDOM);
 
         return dom;
