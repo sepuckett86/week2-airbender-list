@@ -20,10 +20,13 @@ class App extends Component {
         const loading = new Loading({ loaded: false });
         const loadingDOM = loading.render();
         
-        api.getCharacters().then(response => {
-            characterList.update({ characters: response });
-            loading.update({ loaded: true });
-        });
+        api.getCharacters()
+            .then(response => {
+                characterList.update({ characters: response });
+            })
+            .finally(() => {
+                loading.update({ loaded: true });
+            });
         
         dom.prepend(headerDOM);
         dom.appendChild(loadingDOM);
