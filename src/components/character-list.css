@@ -1,6 +1,7 @@
 ul {
     list-style: none;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -12,10 +13,11 @@ li {
     padding: 0px;
     background: whitesmoke;
     border: 4px solid black;
+
 }
 
 li img {
     height: 200px;
-    width: 400px;
+    width: 300px;
     object-fit: cover;
 }
