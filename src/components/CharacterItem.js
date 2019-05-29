@@ -8,6 +8,8 @@ class CharacterItem extends Component {
             <li>
                 <h2>${character.name}</h2>
                 <img src="${character.photoUrl}" alt="${character.name}">
+                <p><a href="">Allies</a></p>
+                <p><a href="">Enemies</a></p>
             </li>
         `;
         }
@@ -15,6 +17,8 @@ class CharacterItem extends Component {
             <li>
                 <h2>${character.name}</h2>
                 <img src="./assets/no-image.png" alt="${character.name}">
+                <p><a href="">Allies</a></p>
+                <p><a href="">Enemies</a></p>
             </li>
         `;  
     }
