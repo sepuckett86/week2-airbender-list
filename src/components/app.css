@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Delius&display=swap');
 
+/*  COLORS 
+    Water: #004dff
+    Fire: #e50f10
+    Earth: #219d13
+    Air: #8a8a8a
+*/
+
 h1 {
     font-family: 'Permanent Marker', cursive;
     text-align: center;
-    font-size: 3em;
+    font-size: 3.5em;
 }
 
 h2 {
@@ -15,6 +22,13 @@ h2 {
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0px;
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff0000+0,2989d8+76,7db9e8+100 */
+    background: #ff0000; /* Old browsers */
+    background: -moz-linear-gradient(left,  #ff0000 0%, #2989d8 76%, #7db9e8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #ff0000 0%,#2989d8 76%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #ff0000 0%,#2989d8 76%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 */
 }
 
 main {

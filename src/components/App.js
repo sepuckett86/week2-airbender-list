@@ -22,6 +22,7 @@ class App extends Component {
         
         api.getCharacters().then(response => {
             characterList.update({ characters: response });
+            loading.update({ loaded: true });
         });
         
         dom.prepend(headerDOM);

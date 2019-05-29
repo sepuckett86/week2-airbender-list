@@ -12,12 +12,18 @@ li {
     margin: 5px;
     padding: 0px;
     background: whitesmoke;
-    border: 4px solid black;
-
+    border: 10px outset rgb(72, 72, 72);
+    /* This gets rid of extra space on bottom of li */
+    line-height: 0;
 }
 
 li img {
     height: 200px;
     width: 300px;
     object-fit: cover;
+}
+
+li h2 {
+    /* This adds back line height for h2 after it was removed in li */
+    line-height: 1.2;
 }
