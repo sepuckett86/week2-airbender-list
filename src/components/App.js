@@ -17,7 +17,7 @@ class App extends Component {
         const characterList = new CharacterList({ characters: [] });
         const characterListDOM = characterList.render();
 
-        const loading = new Loading({ loaded: false });
+        const loading = new Loading({ loaded: true });
         const loadingDOM = loading.render();
         
         dom.prepend(headerDOM);
@@ -25,6 +25,7 @@ class App extends Component {
         main.appendChild(characterListDOM);
 
         function updateCharacters() {
+            loading.update({ loaded: false });
             const params = window.location.hash.slice(1);
 
             api.getCharacters(params)
