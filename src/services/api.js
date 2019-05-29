@@ -1,8 +1,8 @@
 const URL = 'https://last-airbender-api.herokuapp.com/api/v1/characters/';
 
 const api = {
-    getCharacters() {
-        return fetch(URL)
+    getCharacters(params) {
+        return fetch(`${URL}?${params}`)
             .then(response => response.json());
     }
 };

@@ -1,0 +1,26 @@
+header {
+    background: rgb(255, 255, 255, 0.7);
+    border-bottom: solid black 5px;
+    line-height: 1.5;
+    padding: 1.1rem;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3.5em;
+    text-align: center;
+}
+
+header section {
+   display: flex;
+   justify-content: space-between;
+}
+
+header section img {
+    height: 100px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
